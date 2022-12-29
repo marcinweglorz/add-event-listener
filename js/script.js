@@ -20,11 +20,15 @@ function deleteColor() {
 	square.classList.remove('red')
 }
 
-function movingSquare() {
-	animationSquare.classList.toggle('animsquare')
+function startAnimation() {
+	animationSquare.classList.add('animateDescriptor')
 }
+
+animationSquare.addEventListener('animationend', function () {
+	animationSquare.classList.remove('animateDescriptor')
+})
 
 removeColorBtn.addEventListener('click', deleteColor)
 redBtn.addEventListener('click', redColor)
 blueBtn.addEventListener('click', blueColor)
-animationBtn.addEventListener('click', movingSquare)
+animationBtn.addEventListener('click', startAnimation)

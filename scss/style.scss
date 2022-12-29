@@ -44,7 +44,6 @@ button {
 	width: 300px;
 	height: 300px;
 	background-color: lime;
-	animation: movingSquare 3s linear ;
 }
 
 .remove-color {
@@ -85,4 +84,8 @@ button {
 		height: 300px;
 		background-color: rgb(175, 23, 221);
 	}
+}
+
+.animateDescriptor {
+	animation: movingSquare 2s linear;
 }
