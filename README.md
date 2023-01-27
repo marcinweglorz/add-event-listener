@@ -1,8 +1,5 @@
-# add-event-listener
+# JavaScript Basic Projects
 
-My first small project that changes the colors of the square using color changing buttons.
-
-Added new square with CSS animations and connected button to start square animation in JS
-
-Added stop animation button
+A few JavaScript basic projects during which i practice and learn JavaScript.
+Smaller projects and exercises will be upload here 
 
