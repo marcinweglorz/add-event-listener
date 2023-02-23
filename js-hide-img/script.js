@@ -1,10 +1,21 @@
-const img = document.querySelector('img')
+const arrowBtn = document.querySelector('.arrow')
+const arrowIcon = document.querySelector('.fas')
+const img = document.querySelector('.item1')
 
-img.setAttribute('src', 'https://unsplash.it/600/400')
-img.setAttribute('alt', 'Losowy obrazek z internetu')
 
-const test = () => {
-	console.log('Przykładowy tekst')
+const showImg = () => {
+    img.classList.toggle('hide')
+
+    if(img.classList.contains('hide')) {
+        arrowIcon.style.transform = 'rotate(180deg)'
+    } else {
+        arrowIcon.style.transform = 'rotate(0)'
+    }
 }
 
-setTimeout(test, 2000)
+
+
+
+
+arrowBtn.addEventListener('click', showImg)
+
