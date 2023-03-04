@@ -24,10 +24,10 @@ const addNewTodo = () => {
 	if (todoInput.value !== '') {
 		newTodo = document.createElement('li')
 		newTodo.textContent = todoInput.value
-
 		createToolsArea()
 
 		ulList.append(newTodo)
+
 		todoInput.value = ''
 		errorInfo.textContent = ''
 	} else {
@@ -36,21 +36,21 @@ const addNewTodo = () => {
 }
 
 const createToolsArea = () => {
-	const toolsPanel = createElement('div')
+	const toolsPanel = document.createElement('div')
 	toolsPanel.classList.add('tools')
 	newTodo.append(toolsPanel)
 
-	const completeBtn = createElement('button')
+	const completeBtn = document.createElement('button')
 	completeBtn.classList.add('complete')
-	completeBtn.innetHTML = '<i class="fas fa-check"></i>'
+	completeBtn.innerHTML = '<i class="fas fa-check"></i>'
 
-	const editBtn = createElement('button')
+	const editBtn = document.createElement('button')
 	editBtn.classList.add('edit')
 	editBtn.textContent = 'EDIT'
 
-	const deleteBtn = createElement('button')
+	const deleteBtn = document.createElement('button')
 	deleteBtn.classList.add = 'delete'
-	deleteBtn.innetHTML = '<i class="fas fa-times"></i>'
+	deleteBtn.innerHTML = '<i class="fas fa-times"></i>'
 
 	toolsPanel.append(completeBtn, editBtn, deleteBtn)
 }
