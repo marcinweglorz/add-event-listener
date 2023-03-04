@@ -49,7 +49,7 @@ const createToolsArea = () => {
 	editBtn.textContent = 'EDIT'
 
 	const deleteBtn = document.createElement('button')
-	deleteBtn.classList.add = 'delete'
+	deleteBtn.classList.add('delete')
 	deleteBtn.innerHTML = '<i class="fas fa-times"></i>'
 
 	toolsPanel.append(completeBtn, editBtn, deleteBtn)
