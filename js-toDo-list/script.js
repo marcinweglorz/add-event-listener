@@ -24,7 +24,7 @@ const prepareDOMElements = () => {
 	popup = document.querySelector('.popup')
 	popupInfo = document.querySelector('.popup-info')
 	popupInput = document.querySelector('.popup-input')
-	popupAddBtn = document.querySelector('accept')
+	popupAddBtn = document.querySelector('.accept')
 	popupCloseBtn = document.querySelector('.cancel')
 }
 
